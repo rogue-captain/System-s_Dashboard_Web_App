@@ -1,0 +1,657 @@
+<!DOCTYPE HTML>
+
+<html>
+
+ 
+
+<!-- This HTML page is intended to be used by Lineage and Sams cLub Site DC 4020 by systems department in order to consolidate
+
+and streamline access to common resources required for system's department duties.
+
+ 
+
+PROGRAMMER: Sully Erkan-Rijos ; Lineage ID 81303 -->
+
+ 
+
+ 
+
+                <head>
+
+               
+
+                                <meta charset ="UTF-8" lang="en">
+
+                               
+
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                               
+
+                               
+
+                                <title> DC 4020: Systems Dashboard </title>
+
+                               
+
+                               
+
+                                <!-- Links to CSS and J.Script -->
+
+                               
+
+                                <link rel="stylesheet" href="4020Dashstyles.css">
+
+                               
+
+                                <script src="4020DashScript.js" defer> </script>
+
+                               
+
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+
+                               
+
+                                <!-- Links to CSS and J.Script -->
+
+               
+
+                </head>
+
+               
+
+               
+
+                <!-- HEAD / BODY -->
+
+               
+
+ 
+
+                <body>
+
+               
+
+                                <div id="Welcome-Section">
+
+ 
+
+                                                <!-- Container for Lineage Logo as Header -->
+
+                                                               
+
+                                </div><!-- Welcome-Section -->
+
+                               
+
+                               
+
+                               
+
+                               
+
+                                                               
+
+                                <nav id="navbar">
+
+                                                               
+
+                                                                                <a class="nav-link" href=" " target="_blank"> Atlas </a>
+
+                                                                               
+
+                                                                                <a class="nav-link" href=" " target="-blank"> B-Mat </a>
+
+                                                                               
+
+                                                                                <a class="nav-link" href="" target="_blank"> Script Site </a>
+
+                                                                               
+
+                                                                                <a class="nav-link" href=" " target="_blank"> YMS </a>
+
+                                                                               
+
+                                                                                <a class="nav-link" href=" " target="_blank"> AD Migration </a>                                               
+
+                                                                               
+
+                                                                                <a class="nav-link" href="" target="_blank"> X-Call </a>                                                               
+
+                                                                               
+
+                                                                                <a class="nav-link" href=" "> Service Now </a>
+
+                                                                               
+
+                                                                                <a class="nav-link" href=" "
+
+                                                                                target="_blank"> 1BW </a>
+
+                                                                               
+
+                                                                               
+
+                                                                               
+
+                                                                                <!-- drop down menu items below -->
+
+                                               
+
+                                               
+
+                                                                                                                                <div class="DropDown">
+
+                                                                               
+
+                                                                                <a class="nav-link" id="ToolsDropDown"> Documents </a>
+
+                                                                               
+
+                                                                                                <ul id="tools-dropdown-menu" class="dropdown-menu">
+
+                                                                                               
+
+                                                                                                                <li> <a class=" "> DPS </a> </li>
+
+                                                                                               
+
+                                                                                                </ul>
+
+                                                                               
+
+                                                                                </div>  <!-- class="DropDown" -->
+
+                                               
+
+                                               
+
+                                               
+
+                                               
+
+                                               
+
+                                               
+
+                                               
+
+                                                                                <!-- Lineage Links Dropdown -->
+
+                                                                                               
+
+                                                                                               
+
+                                                                                <div class="DropDown">
+
+                                                                               
+
+                                                                                <a class="nav-link" id="LineageDropDown"> Lineage Links </a>
+
+                                                                               
+
+                                                                                                <ul id="lineage-dropdown-menu" class="dropdown-menu">
+
+                                               
+
+                                                                                                                <li> <a class="nav-link" href="" target="_blank"> Okta </a> </li>
+
+                                                                                                               
+
+                                                                                                                <li> <a class="nav-link" href=" " target="_blank"> Box </a> </li>
+
+                                                                                                               
+
+                                                                                                                <li> <a class="nav-link" href=" " target="_blank"> Awardco </a> </li>
+
+                                                                                                                                                                                                                               
+
+                                                                                                                <li> <a class="nav-link" href=" " target="_blank">  DayForce  </a> </li>
+
+                                                                                                               
+
+                                                                                                                                                               
+
+                                                                                                                <li> <a class="nav-link" href=" " target="_blank"> WorkDay </a> </li>
+
+                                                                                                               
+
+                                                                                               
+
+                                                                                                </ul>
+
+                                                                               
+
+                                                                                </div>  <!-- class="DropDown" -->
+
+                                                                               
+
+                                                                               
+
+                                                                               
+
+ 
+
+                                                                               
+
+                                                                                <!-- Walmart Links Dropdown -->
+
+                                                                               
+
+                                                                               
+
+                                                                                <div class="DropDown">
+
+                                                                               
+
+                                                                                <a class="nav-link" id="WalmartDropDown"> Walmart Links </a>
+
+                                                                               
+
+                                                                                                <ul id="walmart-dropdown-menu" class="dropdown-menu">
+
+                                                                                               
+
+                                                                                                                <li> <a class="nav-link" href=" " target="_blank"> EOC </a> </li>
+
+                                                                                                               
+
+                                                                                                                <li> <a class="nav-link" href="" target="_blank"> GRT </a> </li>
+
+                                                                                                               
+
+                                                                                                                <li> <a class="nav-link" href="" target="_blank">  GNFR </a> </li> 
+
+ 
+
+                                                                                                                <li> <a class="nav-link" href="" target="_blank"> Mist </a> </li>                                                                                                      
+
+ 
+
+                                                                                                                <li> <a class="nav-link" href=" " target="_blank"> Triage </a> </li>
+
+                                                                                                               
+
+                                                                                                                <li> <a class="nav-link" href=" " target="_blank"> MyTech </a> </li>
+
+                                                                                                               
+
+                                                                                                                <li> <a class="nav-link" href=" " target="_blank"> WSEPatch </a> </li>
+
+                                                                                                               
+
+                                                                                                                <li> <a class="nav-link" href=" " target="_blank">  SharePoint  </a> </li>
+
+                                                                                                               
+
+                                                                                                                <li> <a class="nav-link" href=" " target="_blank"> NotOpenStores </a> </li>
+
+                                                                                                               
+
+                                                                                                </ul>
+
+                                                                                               
+
+                                                                                </div>  <!-- class="DropDown" -->
+
+ 
+
+                                                               
+
+                                </nav>
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+ 
+
+ 
+
+ 
+
+ 
+
+                                <div id="Banner">
+
+                                               
+
+                                                <h1 id="systemsBanner"> Sam's DC 4020 : Systems Dashboard </h1>
+
+ 
+
+                                                <h1 id="dateBanner"> </h1> <!-- dateBanner CREDIT: Paul Cruze -->
+
+ 
+
+                                </div> <!-- SystemsBanner -->
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+                                <div id="updatesBoard">
+
+                               
+
+                                                <div id="SystemsScheduleBox" >
+
+                               
+
+                                                <h2> Systems Schedule </h2>
+
+                                               
+
+                                                                                <div id="SystemsScheduleImage" class="box-item">
+
+                                                               
+
+                                                                                                <!--<img id="CurrentSchedule"  src=""
+
+                                                                                                alt="This is supposed to be the Systems Schedule ... Ooops ?">-->
+
+                                                                                               
+
+                                                                                                    <input type="file" id="fileInput" accept=".xlsx, .xls" />
+
+                                                                                                               
+
+                                                                                                                <table id="excelTable" border="1"></table>
+
+                                                                               
+
+                                                                                </div> <!-- SystemsScheduleImage -->
+
+                                                               
+
+                                                </div> <!-- SystemsScheduleBox -->
+
+                                               
+
+                                </div> <!-- updatesBoard -->
+
+                                               
+
+                                               
+
+                                               
+
+                                               
+
+                                               
+
+                                               
+
+                                               
+
+                                               
+
+                                               
+
+               
+
+ 
+
+                               
+
+                                <div id="ItemsOfTheDay">
+
+                               
+
+                                                <div id="PokemonOfTheDayBox" >
+
+                                               
+
+                                                                                <h2> Pokemon Of The Day </h2>
+
+                                                                               
+
+                                                                                <!-- <h2 id="pokemonTestText"> X </h2>  DEBUGGING LINE pokemonFolder/pokemon1.jfif-->
+
+                                               
+
+                                                                                <div id="PokemonOfTheDayImage" class="box-item">
+
+                                                               
+
+                                                                                                <img name="pokemonOfTheDay"  src=""
+
+                                                                                                alt="This is supposed to be the Pokemon of the Day ... Ooops ?">
+
+                                                                               
+
+                                                                                </div> <!-- pokemonOfTheDayImage -->
+
+                                               
+
+                                                </div> <!-- PokemonOfTheDayBox -->    
+
+                               
+
+                                </div> <!-- ItemsOfTheDay -->
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+                                <div id="memoBox">
+
+ 
+
+                                                <div id="SystemsBulletinBoardBox" >
+
+                                               
+
+                                                <h2> Systems Bulletin Board </h2>
+
+                                               
+
+                                                                                <!--<div id="SystemsBulletinImage">
+
+                                                               
+
+                                                                                                <img id=" "
+
+                                                                                                alt="This is supposed to be the Meme of the Day ... Ooops ?"> -->
+
+                                                                                               
+
+                                                                                                <div id="SystemsBulletinBoard" class="box-item" contenteditable="true">  </div> <!-- SystemsBulletinBoard -->
+
+                                                                                               
+
+                                                                                                <button id="updateButton" onclick="saveContent()"> Update Board </button> <!-- SystemsBulletinBoard -->
+
+                                                                               
+
+                                                                                <!--</div>  MemeOfTheDayImage -->
+
+                                               
+
+                                                </div> <!-- SystemsBulletinBoardBox -->
+
+                                               
+
+                                </div> <!-- memoBox -->
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+                                <div id="AboutUs">
+
+                               
+
+                                                <h1> Meet The Team ! </h1>
+
+                                               
+
+                                                <div class="MeetTheTeamBox">
+
+                                               
+
+                                                <h2> Systems Manager </h2>
+
+                                               
+
+                                                <p> Jeffrey Maydole </p>
+
+                                               
+
+                                                                                <!--<div id="MeetTheTeamImage"> -->
+
+                                                               
+
+                                                                                                <!-- <img id="CurrentMeme" src="”
+
+                                                                                                alt="This is supposed to be the Meme of the Day ... Ooops ?"> -->
+
+                                                                               
+
+                                                                                <!-- </div> <!-- MeetTheTeamImage -->
+
+                                               
+
+                                                </div> <!-- MeetTheTeamBox -->
+
+                                               
+
+                                               
+
+                                               
+
+                                                <div class="MeetTheTeamBox">
+
+                                               
+
+                                                <h2> Systems Team </h2>
+
+                                               
+
+                                                <h2> Data Processing Technicians </h2>
+
+                                               
+
+                                                <p> Thomas Garcia </p>
+
+                                                <p> John Corey </p>
+
+                                                <p> Nathan Petrick </p>
+
+                                                <p> Paul Cruze </p>
+
+                                                <p> Sully Erkan-Rijos </p>
+
+                                                <p> Andrew Nuokeo </p>
+
+                                                <p> Joshua Edwards </p>                                            
+
+                                               
+
+                                               
+
+                                                                                <!-- <div id="MeetTheTeamImage"> -->
+
+                                                               
+
+                                                                                                <!--<img id="CurrentMeme" src=" "
+
+                                                                                                alt="This is supposed to be the Meme of the Day ... Ooops ?">
+
+                                                                               
+
+                                                                                </div> <!-- MeetTheTeamImage -->
+
+                                               
+
+                                                </div> <!-- MeetTheTeamBox -->
+
+                                               
+
+                                               
+
+                                </div> <!-- AboutUs -->
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+                               
+
+                                <!-- Footer -->
+
+                                <footer>
+
+                               
+
+                                                <p> Lineage Logistics Incorporated </p>
+
+                                                <p> 101 Broome Corporate Pkwy </p>
+
+                                                <p> 13748 Conklin New York </p>
+
+                                                <p> Developed by: Sully Erkan-Rijos </p>
+
+                                                <p> Project Start Date: 01/26/2025 </p>
+
+                                                <p> Version 1 completion Date: xx/xx/2025 </p>
+
+                               
+
+                                </footer>
+
+                                <!-- Footer -->
+
+                               
+
+                </body>
+
+</html>
